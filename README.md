@@ -102,7 +102,7 @@ cd ~
 
 For Linux 16.04:
 ```
-https://github.com/MINERIUM-COIN/minerium/releases/download/v3.0.0/Linux16.04-64bits.zip
+wget https://github.com/MINERIUM-COIN/minerium/releases/download/v3.0.0/Linux16.04-64bits.zip
 ```
 For Linux Obuntu 18.04:
 ```
