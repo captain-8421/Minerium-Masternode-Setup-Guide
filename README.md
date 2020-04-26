@@ -146,7 +146,7 @@ Always check the releases page for the latest version and update the URL to refl
 For Linux Obuntu 16.04:
 
 ```
-Linux16.04-64bits.zip
+unzip Linux16.04-64bits.zip
 ```
 
 For Linux Obuntu 18.04:
@@ -201,7 +201,7 @@ logtimestamps=1
 maxconnections=256
 masternode=1
 bind=Your VPS unique public ip address
-port=6115
+port=6116
 externalip=Your VPS unique public ip address
 masternodeaddr=Your VPS unique public ip:6116
 masternodeprivkey=Result of Step 1
