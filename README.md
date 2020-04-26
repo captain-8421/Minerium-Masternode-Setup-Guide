@@ -1,6 +1,6 @@
 # Minerium-Masternode-Setup-Guide
  
-<img src="https://mineriumcoin.com/assets/img/hero-img.png">
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Logo.png">
 
 
 
@@ -30,21 +30,35 @@ First the basic requirements:
 
 **For security reasons, you’re are going to need a different IP for each masternode you plan to host.**
 
+
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Available-balance.png">
+
 ## Configuration
 
 **Step 1:** Using the control wallet, enter the debug console `Tools > Debug console` and type the following command:
 
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Debug-console.png">
+
 ```
 masternode genkey
 ```
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Masternode-genkey.png">
 
 *(This will be the masternode’s privkey variable. We will need this later…)*
+
+
 
 **Step 2:** Using the control wallet, enter the following command:
 
 ```
 getnewaddress masternode01
 ```
+
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/getnewaddress01.png">
+
+
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/getnewaddress.png">
+
 
 **Step 3:** Still in the control wallet, send 15,000 MINR to the wallet address you generated in Step 2. 
 
@@ -54,6 +68,10 @@ Also make sure this is exactly **15,000 MINR**; No less, no more.
 
 **Be absolutely sure the send to address is copied correctly and then check it again. We cannot help you if you send 15,000 MINR to an incorrect address.**
 
+
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Collateral-send.png">
+
+
 Please allow at least 1 block confirmation to complete before moving on.
 
 **Step 4:** Still in the control wallet, enter the command into the console:
@@ -61,6 +79,9 @@ Please allow at least 1 block confirmation to complete before moving on.
 ```
 masternode outputs
 ```
+
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Masternode-outputs.png">
+
 
 *This gets the proof of transaction of sending 15,000 MINR*
 
@@ -85,6 +106,10 @@ masternode01 127.0.0.2:6116 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 
 ```
 
 Substitute with your own values without the "<>"s.
+
+
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/masternode.conf.png">
+
 
 Lastly, close the control wallet and open again to load the new configuration file.
 
@@ -189,7 +214,7 @@ Ctr+x to exit and press Y to save changes and press enter to close
 
 ## Start the Masternode
 
-**Step 1:** Navigate back to the Elunium core VPS server:
+**Step 1:** Navigate back to the Minerium core VPS server:
 
 
 **Step 2:** Start the wallet daemon:
@@ -198,6 +223,16 @@ Ctr+x to exit and press Y to save changes and press enter to close
 mineriumd --daemon
 ```
 
+
+**Make sure your wallet synchronizing complete before start masternode:**
+
+
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Sync-data.png">
+
+
+<img src="https://github.com/captain-8421/Minerium-Masternode-Setup-Guide/blob/guide-image/Sync.png">
+
+
 **Step 3:** From the Control wallet debug console:
 
 ```
@@ -205,6 +240,7 @@ masternode start-alias masternode01
 ```
 
 Where "masternode01" is the name of your masternode alias we shown in example,you can choose yours.
+
 
 **The following should appear.**
 
@@ -221,6 +257,14 @@ Where "masternode01" is the name of your masternode alias we shown in example,yo
 }
 
 ```
+
+Or start yous masternode using **Initialize masternode** From the Masternode Tab
+
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Start-masternode.png">
+
+
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Successfully-started-masternode.png">
+
 
 **Step 4:** Use the following command to check status:
 
@@ -240,15 +284,18 @@ You should see something like:
   "message": "Masternode successfully started"
 }
 ```
+Before **ENABLED** STATUS your masternode will remain in **PRE_ENABLED** status for some minutes.
 
 If you see status Not capable masternode: Hot node, waiting for remote activation, you need to wait a bit longer for the blockchain to reach consensus. It's possible it may take 60 to 120 minutes before the activation can be done. You can also try restarting the VPS wallet `minerium-cli stop` and then `mineriumd --daemon` and trying the `masternode start-alias masternode01` command again local wallet.
 
 Minerium core Masternode Setup is Complete!
 
 
+
+
 ## Tearing down a Masternode
 
 1. `minerium-cli stop` from the masternode to stop the wallet.
-1. Then from your control wallet, edit your masternode.conf, delete the MN1 masternode line entry.
+1. Then from your control wallet, edit your masternode.conf, delete the **masternode01** line entry.
 1. Restart the control wallet.
 1. Your 15,000 MINR will now be unlocked.
