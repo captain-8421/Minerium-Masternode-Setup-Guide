@@ -42,7 +42,7 @@ First the basic requirements:
 ```
 masternode genkey
 ```
-<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Masternode-genkey.png">
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/masternode-genkey.png">
 
 *(This will be the masternode’s privkey variable. We will need this later…)*
 
@@ -80,7 +80,7 @@ Please allow at least 1 block confirmation to complete before moving on.
 masternode outputs
 ```
 
-<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Masternode-outputs.png">
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/masternode_outputs.png">
 
 
 *This gets the proof of transaction of sending 15,000 MINR*
@@ -109,6 +109,11 @@ Substitute with your own values without the "<>"s.
 
 
 <img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/masternode.conf.png">
+
+
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/masternode.conf3.png">
+
+
 
 
 Lastly, close the control wallet and open again to load the new configuration file.
@@ -263,7 +268,7 @@ Or start yous masternode using **Initialize masternode** From the Masternode Tab
 <img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Start-masternode.png">
 
 
-<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Successfully-started-masternode.png">
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Successfully_started.png">
 
 
 **Step 4:** Use the following command to check status:
@@ -286,7 +291,8 @@ You should see something like:
 ```
 Before **ENABLED** STATUS, your masternode will remain in **PRE_ENABLED** status for some minutes.
 
-<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/PRE-ENABLED.png">
+
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/PRE_ENABLED.png">
 
 
 
