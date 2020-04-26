@@ -286,6 +286,11 @@ You should see something like:
 ```
 Before **ENABLED** STATUS your masternode will remain in **PRE_ENABLED** status for some minutes.
 
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/PRE-ENABLED.png">
+
+
+
+
 If you see status Not capable masternode: Hot node, waiting for remote activation, you need to wait a bit longer for the blockchain to reach consensus. It's possible it may take 60 to 120 minutes before the activation can be done. You can also try restarting the VPS wallet `minerium-cli stop` and then `mineriumd --daemon` and trying the `masternode start-alias masternode01` command again local wallet.
 
 Minerium core Masternode Setup is Complete!
