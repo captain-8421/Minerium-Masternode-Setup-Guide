@@ -284,7 +284,7 @@ You should see something like:
   "message": "Masternode successfully started"
 }
 ```
-Before **ENABLED** STATUS your masternode will remain in **PRE_ENABLED** status for some minutes.
+Before **ENABLED** STATUS, your masternode will remain in **PRE_ENABLED** status for some minutes.
 
 <img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/PRE-ENABLED.png">
 
