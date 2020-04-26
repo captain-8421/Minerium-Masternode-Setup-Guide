@@ -127,8 +127,8 @@ unzip Linux18.04-64bits.zip
 **Step 4:** Copy the files to the local bin. **Requires sudo**
 
 ```
-cp mineriumd /usr/local/bin
-cp minerium-cli /usr/local/bin
+sudo cp mineriumd /usr/local/bin
+sudo cp minerium-cli /usr/local/bin
 ```
 
 **Step 5:** Note: If this is the first time running the wallet in the VPS, you’ll need to attempt to start the wallet:
