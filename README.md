@@ -209,6 +209,11 @@ masternodeprivkey=Result of Step 1
 
 *Make sure to replace rpcuser and rpcpassword with your own.*
 
+
+
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Remote_minerium.conf.png">
+
+
 **Step 10:** Save and exit the file:
 
 ```
@@ -264,6 +269,9 @@ Where "masternode01" is the name of your masternode alias we shown in example,yo
 ```
 
 Or start yous masternode using **Initialize masternode** From the Masternode Tab
+
+<img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/start_masternode0.png">
+
 
 <img src="https://raw.githubusercontent.com/captain-8421/Minerium-Masternode-Setup-Guide/guide-image/Start-masternode.png">
 
